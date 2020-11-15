@@ -1,0 +1,28 @@
+
+@SerializedName("success")
+@Expose
+private boolean success;
+public boolean getsuccess() {
+return success;
+}
+public void setsuccess(boolean xsuccess) {
+success = xsuccess;
+}
+@SerializedName("message")
+@Expose
+private String message;
+public String getmessage() {
+return message;
+}
+public void setmessage(String xmessage) {
+message = xmessage;
+}
+@SerializedName("dataset")
+@Expose
+private object dataset;
+public object getdataset() {
+return dataset;
+}
+public void setdataset(object xdataset) {
+dataset = xdataset;
+}

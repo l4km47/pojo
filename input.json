@@ -1,0 +1,57 @@
+[
+    {
+        "success": true,
+        "message": "Command Success",
+        "dataset": [
+            {
+                "Doc_No": "TI00330",
+                "CustCode": "S021",
+                "CustName": "AMILA",
+                "Amount": 50,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00331",
+                "CustCode": "S021",
+                "CustName": "AMILA",
+                "Amount": 82,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00335",
+                "CustCode": "S001",
+                "CustName": "ISURU",
+                "Amount": 50,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00342",
+                "CustCode": "S001",
+                "CustName": "ISURU",
+                "Amount": 2325,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00343",
+                "CustCode": "S001",
+                "CustName": "ISURU",
+                "Amount": 1123,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00347",
+                "CustCode": "S004",
+                "CustName": "OBAMA HOLDING (PVT) LTD",
+                "Amount": 2500,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            },
+            {
+                "Doc_No": "TI00350",
+                "CustCode": "S006",
+                "CustName": "CHANDRA STORES GODAKAWELA",
+                "Amount": 3240,
+                "insertdate": "2020-11-04T00:00:00.000Z"
+            }
+        ]
+    }
+]
