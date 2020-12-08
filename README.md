@@ -1,4 +1,4 @@
 # pojo
 
-## simple python scrypt for json data to java dataset class
+## simple python script for json data to java dataset class
 
