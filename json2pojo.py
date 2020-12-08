@@ -1,14 +1,14 @@
 import json
 
 # some JSON:
-x = ""
+input = ""
 
 with open("input.json", "r") as inputfile:
-    x = inputfile.read()
+    input = inputfile.read()
 # parse x:
-y = json.loads(x)
+jasondata = json.loads(input)
 
-
+#get data type as java
 def _gettype(object):
     if type(object) is int:
         return "int"
@@ -24,19 +24,19 @@ def _gettype(object):
 
 # the result is a Python dictionary:
 output = []
-i = y[0]
+firstdataset = jsondata[0]
 with open("data.txt", "a") as outfile:
 
-    for a in i:
-        ff = '\r\n@SerializedName("{0}")\r\n@Expose\r\nprivate {1} {0};'
+    for a in firstdataset:
+        variable_string = '\r\n@SerializedName("{0}")\r\n@Expose\r\nprivate {1} {0};'
 
-        aa = ff.format(a, _gettype(i[a]))
+        variable_formated = variable_string.format(a, _gettype(i[a]))
 
-        bb = "\r\npublic {1} get{0}() {{\r\nreturn {0};\r\n}}\r\npublic void set{0}({1} x{0}) {{\r\n{0} = x{0};\r\n}}".format(
+        prop_string = "\r\npublic {1} get{0}() {{\r\nreturn {0};\r\n}}\r\npublic void set{0}({1} x{0}) {{\r\n{0} = x{0};\r\n}}".format(
             a, _gettype(i[a])
         )
 
-        # output.append(f"{aa}\r\n{bb}")
-        outfile.write(aa)
-        outfile.write(bb)
-    outfile.close()
+        # write output
+        outfile.write(variable_formated)
+        outfile.write(prop_string)
+    outfile.close() #save and close
